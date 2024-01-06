@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    :root {
+        --primary: #35043C;
+        --secondary: #f99417;
+    }
+}
+@layer utilities{
+    .header-image{
+        background-image: url("/public/static/img/header.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .nav-menu{
+        @apply right-0;
+    }
+
+    .nav-menu--open{
+        @apply -right-2/3;
+    }
+}
+

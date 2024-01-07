@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./public/*.html", "./public/js/*.js"],
   theme: {
+    fontFamily: {
+      "vazir" : "vazir",
+      "vazirBold" : "vazirBold",
+      "nasim" : "nasim"
+    },
     extend: {
       colors: {
         primary: "var(--primary)",

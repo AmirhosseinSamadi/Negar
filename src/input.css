@@ -7,7 +7,22 @@
         --primary: #35043C;
         --secondary: #f99417;
     }
+    @font-face {
+        font-family: "vazir";
+        src: url(../public/fonts/Vazir.ttf), format("truetype");
+    }
+    
+    @font-face {
+        font-family: "vazirBold";
+        src: url(../public/fonts/Vazir-Bold.ttf), format("truetype");
+    }
+    
+    @font-face {
+        font-family: "nasim";
+        src: url(../public/fonts/B-Nasim-Bold_0.ttf), format("truetype");
+    }
 }
+
 @layer utilities{
     .header-image{
         background-image: url("/public/static/img/header.png");
@@ -35,6 +50,12 @@
 
     .nav-menu--open{
         @apply -right-2/3;
+    }
+}
+
+@layer components{
+    .product-box{
+
     }
 }
 

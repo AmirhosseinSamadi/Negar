@@ -36,5 +36,11 @@
     .nav-menu--open{
         @apply -right-2/3;
     }
+    .overlay{
+        @apply invisible opacity-0 bg-black/40 fixed inset-0 w-full h-full z-10 desktop:hidden transition-all;
+    }
+    .overlay--visible{
+        @apply visible opacity-100;
+    }
 }
 

@@ -1,54 +1,24 @@
-const navBtn = document.querySelectorAll(".nav__btn");
-const navMenu = document.querySelectorAll(".nav-menu");
-let navOpen = false;
+const navOpenBtn = document.querySelector(".nav-icon");
+const navCloseBtn = document.querySelector(".nav-close-btn");
+const nav = document.querySelector(".nav");
+const overlay = document.querySelector(".overlay");
+navOpenBtn.addEventListener("click", ()=>{
+  nav.classList.remove("right-64")
+  nav.classList.add("right-0")
+   
+  overlay.classList.add("overlay--visible")
+})
 
-navBtn.forEach((btn, index) => {
-  btn.addEventListener('click', function () {
-    if (navOpen) {
-      btn.classList.remove("nav__btn--open");
-      navMenu[index].classList.remove("nav-menu--open");
-      navOpen = false;
-    } else {
-      btn.classList.add("nav__btn--open");
-      navMenu[index].classList.add("nav-menu--open");
-      navOpen = true;
-    }
-  });
-});
+navCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("right-0");
+  nav.classList.add("-right-64");
 
+  overlay.classList.remove("overlay--visible");
+})
 
+overlay.addEventListener("click", () => {
+  nav.classList.remove("right-0");
+  nav.classList.add("-right-64");
 
-
-// const navBtn = document.querySelectorAll(".nav__btn")
-// const navMenu = document.querySelectorAll(".nav-menu")
-// let navOpen = false
-
-// navBtn.forEach((btn, index) => {
-//     btn.addEventListener("click", function(){
-//         if (navOpen){
-//             btn.classList.remove("nav__btn--open")
-//             navMenu[index].classList.remove("nav-menu--open")
-//             navOpen = false
-//         } else {
-//             btn.classList.add("nav__btn--open")
-//             navMenu[index].classList.add("nav-menu--open")
-//             navOpen = true
-//         }
-//     })
-// })
-
-
-
-
-
-// navBtn.addEventListener(("click"), function(){
-//     if(navOpen){
-//         // navBtn.classList.remove("nav__btn--open")
-//         navMenu.classList.remove("nav-menu--open")
-//         navOpen = false
-//     }else{
-//         // navBtn.classList.add("nav__btn--open")
-//         navMenu.classList.add("nav-menu--open")
-//         navOpen = true
-//     }
-// })
+  overlay.classList.remove("overlay--visible");
+})

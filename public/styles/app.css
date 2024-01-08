@@ -729,6 +729,7 @@ video {
   margin-top: 2rem;
 }
 
+<<<<<<< HEAD
 .ml-\[18px\] {
   margin-left: 18px;
 }
@@ -746,6 +747,10 @@ video {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+=======
+.mb-10 {
+  margin-bottom: 2.5rem;
+>>>>>>> 0fc5fbe04ccc10b467a06802907cf9e30f9f8de2
 }
 
 .inline-block {
@@ -792,6 +797,10 @@ video {
   height: 100%;
 }
 
+.h-\[248px\] {
+  height: 248px;
+}
+
 .min-h-\[156px\] {
   min-height: 156px;
 }
@@ -836,8 +845,16 @@ video {
   width: 100%;
 }
 
+.w-\[138px\] {
+  width: 138px;
+}
+
 .min-w-\[138px\] {
   min-width: 138px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
 }
 
 .max-w-xs {
@@ -921,6 +938,14 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -977,8 +1002,13 @@ video {
   border-radius: 0.75rem;
 }
 
+<<<<<<< HEAD
 .rounded-bl-3xl {
   border-bottom-left-radius: 1.5rem;
+=======
+.rounded {
+  border-radius: 0.25rem;
+>>>>>>> 0fc5fbe04ccc10b467a06802907cf9e30f9f8de2
 }
 
 .rounded-tl-lg {
@@ -1086,8 +1116,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'https\:\/\/static01\.nyt\.com\/images\/2022\/01\/21\/us\/00xp-Lava-vid-cove-mike-ives-is-has-answers\/00xp-Lava-vid-cove-mike-ives-is-has-answers-superJumbo\.jpg\'\)\] {
+  background-image: url('https://static01.nyt.com/images/2022/01/21/us/00xp-Lava-vid-cove-mike-ives-is-has-answers/00xp-Lava-vid-cove-mike-ives-is-has-answers-superJumbo.jpg');
+}
+
 .bg-contain {
   background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-center {
@@ -1157,12 +1195,17 @@ video {
   padding-top: 2.25rem;
 }
 
+<<<<<<< HEAD
 .pr-5 {
   padding-right: 1.25rem;
 }
 
 .text-left {
   text-align: left;
+=======
+.pt-7 {
+  padding-top: 1.75rem;
+>>>>>>> 0fc5fbe04ccc10b467a06802907cf9e30f9f8de2
 }
 
 .text-center {
@@ -1679,5 +1722,23 @@ video {
   .large\:h-\[700px\] {
     height: 700px;
   }
+}
+
+.\[\&\>\*\>h2\]\:text-xl>*>h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.\[\&\>\*\>h2\]\:font-bold>*>h2 {
+  font-weight: 700;
+}
+
+.\[\&\>\*\>p\]\:text-sm>*>p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.\[\&\>\*\>p\]\:font-semibold>*>p {
+  font-weight: 600;
 }
 
